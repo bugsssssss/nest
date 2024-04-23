@@ -23,7 +23,7 @@ export class NinjasController {
 
 
     @Post()
-    @UseGuards(BeltGuard)
+    // @UseGuards(BeltGuard)
     createNinja(@Body(new ValidationPipe()) createNinjaDto: CreateNinjaDto) {
         return this.ninjasService.createNinja(createNinjaDto)
     }
