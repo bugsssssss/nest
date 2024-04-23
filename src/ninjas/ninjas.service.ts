@@ -46,6 +46,7 @@ export class NinjasService {
                 }
             }
             return ninja;
+            
         })
     }
 
