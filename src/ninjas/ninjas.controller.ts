@@ -12,14 +12,14 @@ export class NinjasController {
         return this.ninjasService.getNinjas(weapon)
     }
 
-    @Get(':id')
-    getNinjaById(@Param('id', ParseIntPipe) id : number) {
-        try {
-            return this.ninjasService.getNinja(id)
-        } catch (err) {
-            throw new NotFoundException()
-        }
-    }
+    // @Get(':id')
+    // getNinjaById(@Param('id', ParseIntPipe) id : number) {
+    //     try {
+    //         return this.ninjasService.getNinja(id)
+    //     } catch (err) {
+    //         throw new NotFoundException()
+    //     }
+    // }
 
 
     @Post()
